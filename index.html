@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" type="text/css" href="css/menu1.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos3.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>CALIDAD EMPAQUE</title> 
+</head> 
+
+<body>
+    <div class="container-fluid">
+        <!-- <div class="row">
+             <div class="col-sm-12 text-center">
+                  <h2 style="color:#124578"></h2>
+             </div>
+        </div> -->
+        <!-- <div class="row">
+            <div  class="col-md-6 offset-md-3 text-danger hidden">
+                <h1 id="divError"> </h1>
+            </div>
+        </div> -->
+        <div class="row"> 
+            <div class="col-md-6" >
+                <img src="img/fondo2.png" alt="Descripción" style="display: inline-block; vertical-align: top;">
+                <span style="display: inline-block; margin-left: 10px;">SISTEMA GRÁFICO DE AUDITORÍAS DIGITALES</span>                           
+            </div>
+        </div>
+    </div>   
+     
+    <br><br> 
+    <br><br> 
+    <br><br>
+
+    <fieldset>
+        <br>
+        <form action="login.php" method="post">
+            <legend>INICIAR SESIÓN</legend>
+            <br><br>
+            <input id="field1" name="usuario" type="text" placeholder="Nombre de usuario"> 
+            <br><br> 
+            <input id="field2" name="palabra_secreta" type="password" placeholder="Contraseña"> 
+            <br><br>
+            <input id="button" type="submit" value="INGRESAR"> 
+            <br><br> 
+        </form> 
+    </fieldset>
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registrado', reg))
+        .catch(err => console.error('Error al registrar el SW', err));
+    }
+    </script>
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<!-- <fieldset>
+    <legend>Catálogo de Clientes</legend>
+    <form action=" " method = "POST">
+        Id cliente: <br/> <input type="text" name="id-cliente" /> 
+        <input type="submit" value="Consultar">
+    </form>
+</fieldset> -->
+
+<!-- <fieldset>
+    <legend>Alta de Especificaciones de Empaque</legend>
+    <form action=" " method = "POST">
+        Id cliente: <input type="text" name="id-cliente" /> <br/>
+        Modelo:     <input type="text" name="modelo" /> 
+        <input type="submit" value="Consultar">
+    </form>
+</fieldset> -->
+
+<!-- <fieldset>
+    <legend>Actualización de especificaciones de empaque</legend>
+    <form action=" " method = "POST">
+        Id cliente: <input type="text" name="id-cliente" /> <br/>
+        Modelo:     <input type="text" name="modelo" /> 
+        <input type="submit" value="Consultar">
+    </form>
+</fieldset> -->
+
+<!-- <fieldset>
+    <legend>Auditoria de Calidad de Empaque</legend>
+    <form action=" " method="POST" enctype="multipart/form-data" class="css1" >                            
+        <input type="text" style="color: black; background-color: #c5e1e4; 
+        height:40px; width:200px; font-size: 24px"  REQUIRED name="id-cliente" 
+        placeholder="Id cliente" value="" /> <br/>
+        
+        <input type="text" style="color: black; background-color: #c5e1e4; 
+        height:40px; width:200px; font-size: 24px" REQUIRED name="modelo" placeholder="Modelo" value=""/> 
+        <input type="submit" style=" font-size: 24px  "  value="Consultar">
+    </form>
+</fieldset> -->
+
+</body> 
+</html> 
