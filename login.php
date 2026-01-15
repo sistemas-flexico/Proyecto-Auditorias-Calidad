@@ -1,54 +1,64 @@
-<?php 
- # Las claves de acceso, ahorita las ponemos aquí 
- # y despues colocarlas en la bds 
- $usuario_correcto = "audit01"; 
- $palabra_secreta_correcta = "edward"; 
- /* 
- Para leer los datos que fueron enviados al formulario, 
- accedemos al arreglo superglobal llamado $_POST en PHP, y 
- para obtener un valor accedemos a $_POST["clave"] en donde 
- clave es el "name" que le dimos al input 
-  */ 
- # Nota: no estamos haciendo validaciones 
- $usuario = $_POST["usuario"]; 
- $palabra_secreta = $_POST["palabra_secreta"]; 
- # Luego de haber obtenido los valores, ya podemos comprobar: 
- if ($usuario === $usuario_correcto && $palabra_secreta === $palabra_secreta_correcta) { 
-     # Significa que coinciden, así que vamos a guardar algo 
-     # en el arreglo superglobal $_SESSION, ya que ese arreglo 
-     # "persiste" a través de todas las páginas 
-     # Iniciar sesión para poder usar el arreglo 
-     session_start(); 
-     # Y guardar un valor que nos pueda decir si el usuario 
-     # ya ha iniciado sesión o no. En este caso es el nombre 
-     # de usuario 
-     $_SESSION["usuario"] = $usuario; 
-     # Luego redireccionamos a la página "Secreta" 
-     header("Location: audit.php"); 
- } else { 
-     # No coinciden, así que simplemente imprimimos un 
-     # mensaje diciendo que es incorrecto 
-     echo "El usuario o la contraseña son incorrectos"; 
- }
-
-?>
-<a href="logout.php">Cerrar sesión</a> 
-
-<!--  -->
 <?php
+$usuario_correcto = "audit01";
+$palabra_secreta_correcta = "edward";
+$usuario = $_POST["usuario"];
+$palabra_secreta = $_POST["palabra_secreta"];
 
-$usuario_correcto = "audit01"; 
-$palabra_secreta_correcta = "edward"; 
-$usuario = $_POST["usuario"]; 
-$palabra_secreta = $_POST["palabra_secreta"]; 
-
-if ($usuario === $usuario_correcto && 
-    $palabra_secreta === $palabra_secreta_correcta) { 
-    session_start(); 
-    $_SESSION["usuario"] = $usuario; 
-    header("Location: audit.php"); 
-} else { 
-    echo "El usuario o la contraseña son incorrectos"; 
+if (
+    $usuario === $usuario_correcto &&
+    $palabra_secreta === $palabra_secreta_correcta
+) {
+    session_start();
+    $_SESSION["usuario"] = $usuario;
+    header("Location: menu.html");
+} else {
+    $mensaje = "error";
+    $texto = "Usuario o contraseña incorrectos";
 }
-
 ?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN ERROR</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <script>
+        Swal.fire({
+            body: true,
+            icon: '<?php echo $mensaje; ?>',
+            title: '<?php echo ucfirst($mensaje); ?>',
+            text: '<?php echo $texto; ?>',
+            confirmButtonText: 'Aceptar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+
+    <style>
+        .swal2-title {
+            font-family: Arial, sans-serif;
+            font-size: 40px !important;
+            color: black !important;
+        }
+
+        .swal2-html-container {
+            font-family: sans-serif;
+            font-size: 20px !important;
+            color: black !important;
+        }
+
+        .swal2-confirm {
+            background-color: #18397a !important;
+        }
+    </style>
+
+</body>
+
+</html>

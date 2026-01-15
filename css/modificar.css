@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/fondo0.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* font-size: 25px; */
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    position: fixed; /* Fija el header */
+    top: 0;          /* Lo coloca en la parte superior */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;   /* Evita que otros elementos lo tapen */
+}
+
+.img-logo {
+    margin-top:10px;
+    width: 30%; /* Ajusta el ancho al contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+span {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem; /* Tamaño grande para destacar */
+    font-weight: bold;
+    color: #18397a;
+    text-align: center;
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin: 40px 0; /* Espaciado superior e inferior */
+    padding-left: 3%;
+    display: inline-block; 
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+a {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    color: #118792;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin: 50px 0; /* Espaciado superior e inferior */
+    padding-left: 3%;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+main {
+    background-image: white;
+    padding-top: 150px;
+}
+ 
+form {
+    font-size: 18px;
+    padding: 30px;
+    font-weight: bold;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(17, 135, 146, 0.9);
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    position: absolute;
+    margin-left: 50ch;
+    margin-top: -25px;
+    /* margin-bottom: 20px; */
+}
+
+input {
+    font-size: 14px;
+    margin-bottom: 7px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    background-color: #c5e1e4;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 25px;
+    padding: 6px;
+    border: 2px solid #118792;
+}
+
+input[type="text"] {
+    text-align: center;
+    font-family:sans-serif;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    padding-bottom: 5px;
+    font-size: large;
+}
+
+input[type="file"] {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family:sans-serif;
+    background-color: hsl(186, 36%, 83%, 0.5);
+}
+
+input[type="submit"] {
+    font-size: 20px;
+    background-color: #18397a;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+input:hover[type="submit"] {
+    font-size: 20px;
+    background-color: #14aca6;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+img {
+    height: 200px;
+}

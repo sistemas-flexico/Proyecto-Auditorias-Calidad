@@ -1,9 +1,0 @@
-PALETA DE COLORES
- #14aca6  
- #c5e1e4  
- #18397a  
- #118792  
- #7086ad  
- #869cbc  
- #456095  
- #8cd4d4 

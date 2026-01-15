@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed; /* Fija el header */
+    top: 0;          /* Lo coloca en la parte superior */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;   /* Evita que otros elementos lo tapen */
+}
+
+.img-logo {
+    margin-top:10px;
+    width: 30%; /* Ajusta el ancho al contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+span {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem; /* Tamaño grande para destacar */
+    font-weight: bold;
+    color: #18397a;
+    text-align: center;
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin: 40px 0; /* Espaciado superior e inferior */
+    padding-left: 3%;
+    display: inline-block; 
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+a {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    color: #118792;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin: 50px 0; /* Espaciado superior e inferior */
+    padding-left: 3%;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+body {
+    background-image: url('../img/img7.png');
+}
+
+main {
+    background-image: white;
+    padding-top: 150px;
+}
+
+legend {
+    font-size:25px;
+    color:white;
+    text-shadow:1px  0px 0px black,
+                0px  1px 0px black,
+                -1px  0px 0px black,
+                0px -1px 0px black; 
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+}
+
+form {
+    /* font-size:18px; */
+    font-family:sans-serif;
+    font-weight:bold;
+    color:black;
+    background-color: rgba(17, 135, 146, 0.9);
+    border: 5px outset;
+    height: auto;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    left: 20px;
+    /* z-index: 1; /* detrás */
+    width: 20%;
+    margin-left: 5%;
+}
+
+/* Contenedor de dos columnas */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas de igual ancho */
+    gap: 40px; /* Espacio entre columnas */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inputCliente, .inputModelo {
+    color: black; 
+    height:30px; 
+    width:175px; 
+    font-size: 20px;
+    background-color: #c5e1e4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btnConsultar {
+    font-size: 20px;
+    background-color: #18397a;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btnConsultar:hover {
+    background-color: #14aca6;
+    transition: background-color 0.3s ease;
+}
+
+table {
+    font-size:20px;
+    font-family:sans-serif;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px outset;
+    border-collapse: collapse;
+}
+
+.field-name1 {
+    font-weight: bold;
+    width: 35%;
+}
+
+.field-name2 {
+    font-weight: bold;
+    width: 40%;
+}
+
+#tabla1 {
+    margin-top: 250px;
+    margin-bottom: 5px;
+}
+
+#tabla1 td {
+    font-size: 20px;
+    border-bottom: 1px solid #18397a;
+}
+
+#tabla2 {
+    margin-bottom: 50px;
+}
+
+#tabla2 th {
+    font-size: 20px;
+    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#tabla2 td {
+    font-size: 18px;
+    border-bottom: 1px solid #18397a;
+    margin-bottom: none;
+}
+
+td {
+    padding: 6px;
+}
+
+th {
+    font-weight:bold;
+    text-transform: uppercase;
+}
+/**************************************************************/
+
+.data-table th {
+    background-color: #18397a;
+    color: white;
+    /* font-weight: bold; */
+    padding: 15px;
+    text-align: center;
+    /* border: 1px solid #ddd; */
+    font-size: 20px;
+}
+
+.empaque-table {
+    width: auto;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.1); */
+}
+
+.empaque-table th {
+    background-color: #118792;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border: none;
+}
+
+.empaque-description {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    color: black;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #118792;
+}
+
+.images-row {
+    text-align: center;
+}
+
+.image-cell {
+    padding: 20px;
+    text-align: center;
+    /* border: 1px solid #eee; */
+}
+
+.empaque-img {
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.empaque-img:hover {
+    transform: scale(1.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .data-table, .empaque-table {
+        font-size: 14px;
+    }
+    
+    .data-table td, .data-table th {
+        padding: 8px 10px;
+    }
+    
+    .empaque-img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .image-cell {
+        padding: 10px;
+        padding-left: 0;
+        display: block;
+        width: 100%;
+    }
+    
+    .images-row {
+        display: block;
+    }
+}
+
+@media print {
+    /* Esconde elementos innecesarios */
+    .no-print { display: none; }
+    
+    /* Parámetros de impresión */
+    .inputCliente, .inputModelo, table, #tabla1 td, .data-table th, #tabla2 td { font-size: 12pt; }
+    table { page-break-inside: avoid; }
+
+    #tabla1 {
+        /* position: relative; */
+        /* top: -280px; Subir la tabla */
+        /* o */
+        margin-top: -30px;
+        margin-bottom: 180px;
+        
+    }
+
+    #tabla2 {
+        /* position: relative;
+        top: -80px; */
+        margin-top: -30px;
+        /* margin-bottom: 250px; */
+    }
+
+    /* form {
+        margin-top: -30px;
+        margin-bottom: 20px;
+        border: none;
+        box-shadow: none;
+        width: auto;
+    } */
+
+}

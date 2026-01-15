@@ -1,0 +1,146 @@
+/* Antes esta hoja de estilos se llamaba "estilos2.css" */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed; /* Fija el header */
+    top: 0;          /* Lo coloca en la parte superior */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /*z-index: 1000;   /* Evita que otros elementos lo tapen */
+}
+
+.img-logo {
+    margin-top:10px;
+    width: 30%; /* Ajusta el ancho al contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+span {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem; /* Tamaño grande para destacar */
+    font-weight: bold;
+    color: #18397a;
+    text-align: center;
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin: 40px 0; /* Espaciado superior e inferior */
+    padding-left: 3%;
+    display: inline-block; 
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+a {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    color: #118792;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    margin: 50px 0; /* Espaciado superior e inferior */
+    padding-left: 3%;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+body{
+    background-image: url('../img/img4.png');
+}
+
+main{
+    /* background-size: cover; */
+    background-attachment: fixed;
+    padding-top: 150px;
+    /* padding-left: 30px; */
+}
+
+legend {
+    font-size:25px;
+    color:white;
+    text-shadow:1px  0px 0px black,
+                0px  1px 0px black,
+                -1px  0px 0px black,
+                0px -1px 0px black; 
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+fieldset, option{
+    border: 3px black solid;
+    border-radius: 10px;;
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+    height: auto;
+    font-family:sans-serif;
+    font-weight:bold;
+    color:white;
+    background-color: rgba(17, 135, 146, 0.8);
+    border: 3px outset;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+.fieldset1, .fieldset-angosto {
+    width: 30%;
+    float: left;
+    margin-right: 15px;
+    margin-left: 35px;
+}
+
+.txt, select {
+    font-size: 20px;
+    padding: 6px;
+    border: 2px solid #118792;
+}
+
+.txt2, select {
+    font-size: 16px;
+    padding: 4px;
+    border: 2px solid #118792;
+}
+
+.txt3 {
+    font-size: 16px;
+    padding: 4px;
+    border: 2px solid #118792;
+    width: 55%;
+}
+
+#txt4 {
+    font-size: 16px;
+}
+
+.btn1 {
+    margin-top: 10px;
+}
+
+.btn1:hover {
+    background-color: #456095;
+}
+
+input[type="submit"] {
+    font-size: 20px;
+    background-color: #18397a;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}

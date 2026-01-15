@@ -1,0 +1,5 @@
+# Ignorar un archivo específico
+conex.php
+config.php
+login.txt
+fpdf/

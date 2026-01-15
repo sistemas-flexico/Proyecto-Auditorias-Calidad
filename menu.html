@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/menu1.css">
-    <title>Menú Calidad</title>
-
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <title>MENÚ</title>
 </head>
 <body>
-    <div id="Encabezado">
-       <ul class="nav">
-            <li> <a href="">CLIENTES</a>
-                <ul>
-                    <li> <a href="clientes.php">Actualizar clientes</a></li>                    
-                 </ul>
-            </li>                 
-            <li> <a href="">ESPECIFICACIONES DE EMPAQUE</a>
-                <ul>
-                    <li> <a href="alta_eemp.php">Alta de especificaciones</a></li>
-                    <li> <a href="eempaque.php">Actualizar especificaciones</a></li>         
-                </ul>
-            </li>
-            <li> <a href="">TIPOS DE EMPAQUE</a>
-                <ul>
-                    <li> <a href="mostrar_ima.php">Catálogo de tipos de empaque</a></li>
-                </ul>
+    <header>
+        <div class="container-fluid">
+        <div class="row"> 
+            <div>
+                <img src="img/logo-flexico.png" alt="Descripción" class="img-logo"/>
+                <span>MENÚ DEL SISTEMA</span>
+                <a href="index.html">Cerrar sesión</a>
+            </div>
+        </div>
+        </div>   
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="seccion-izquierda">
+                <legend>SISTEMA DE AUDITORÍAS DE CALIDAD DE EMPAQUE</legend>
+            </div>
             
-            </li>
-            <li> <a href="">AUDITORÍAS</a>
-                <ul>
-                    <li> <a href="audit.php">Auditorías de empaque</a></li>
-                </ul>
-            
-            </li>
-       </ul>    
-    </div>
+            <div class="seccion-derecha">
+                <a href="clientes.php" class="options">CLIENTES</a>
+                <a href="alta_eemp.php" class="options">ALTA DE ESPECIFICACIONES</a>
+                <a href="eempaque.php" class="options">ACTUALIZACIÓN DE ESPECIFICACIONES</a>
+                <a href="mostrar_ima.php" class="options">TIPOS DE EMPAQUE</a>                         
+                <a href="audit.php" class="options">AUDITORÍAS</a>                        
+            </div>
+        </div>
+    </main>
 </body>
 </html>

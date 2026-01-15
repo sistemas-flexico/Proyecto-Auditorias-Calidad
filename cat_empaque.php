@@ -1,44 +1,37 @@
-<!-- Script de una página para registrar o dar de alta nuevos tipos de empaque con la opción de subir 3 imágenes como máximo. -->
-
 <!DOCTYPE html>
-
-<html>
-
- <style>
- .css1 {
-    font-size:14px;
-    font-family:verdana,helvetica;
- }
- .css2 {
-    font-size:14px;
-    font-family:verdana,helvetica;
- }
- body{
-    font: size 25px;
-    background-attachment: fixed;
- }
-    
- </style>
+<html lang="es">
 
 <head>
- <title> CATALOGO DE TIPOS DE EMPAQUE </title>
- </head> 
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="./css/cat_empaque.css">
+   <title>Carga de Imágenes de Empaque</title>
+</head>
 
-<center>
-    <body background="fondo1.png">
-       <center><h1>  CATALOGO Tipos de empaque </h1></center>
-       <br/>
-       <br/>
-       <form action="guarda-ima.php" method="POST" enctype="multipart/form-data" class="css1" >
-         <br/>
-         <br/>
-         <input class="css2" type="text" REQUIRED name="tempa" placeholder="# de Tipo de empaque" value="" />  <br/><br/>
-         <input class="css2" type="text" REQUIRED name="empaque" placeholder="Tipo de empaque..." value="" /> <br/><br/>
-         <input class="css2" type="file" REQUIRED name="imagen1" /> <br/><br/>
-         <input class="css2" type="file" name="imagen2" /> <br/><br/>
-         <input class="css2" type="file" name="imagen3" /> <br/><br/>
-         <input class="css2" type="submit" value="Aceptar">         
-       </form>
-    </body>
-</center>
+<body>
+   <header>
+      <div class="container-fluid">
+         <div class="row">
+            <div>
+               <img src="img/logo-flexico.png" alt="Descripción" class="img-logo" />
+               <span>CARGA DE IMÁGENES</span>
+               <a href="menu.html">Volver al menú de inicio</a>
+               <a href="index.html">Cerrar sesión</a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <form action="guarda-ima.php" method="POST" enctype="multipart/form-data">
+         <input type="text" REQUIRED name="tempa" placeholder="Código del tipo de empaque" value="">
+         <input type="text" REQUIRED name="empaque" placeholder="Tipo de empaque" value="">
+         <input type="file" REQUIRED name="imagen1">
+         <input type="file" name="imagen2">
+         <input type="file" name="imagen3">
+         <input type="submit" value="Aceptar" class="btn">
+      </form>
+   </main>
+</body>
+
 </html>
