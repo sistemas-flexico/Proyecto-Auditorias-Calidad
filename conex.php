@@ -2,7 +2,7 @@
 
 <?php
 date_default_timezone_set('America/Mexico_city');
-$con = new mysqli("10.1.8.56", "root", "P@ssw0rd", "contadorv2");
+$con = new mysqli("IP-Servidor", "mi usuario", "secretpassword", "mi base de datos");
 
 if (!$con) {
     // echo "No se ha podido conectar con el servidor FLEX ******...";
