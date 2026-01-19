@@ -2,4 +2,16 @@
 conex.php
 config.php
 login.txt
+composer.json
+composer.lock
+creandopdf.php
+generacion_pdf.php
+reports.php
+
+# Ignorar todos los archivos .log
+*.log
+
+# Ignorar directorios específicos
 fpdf/
+pwa/
+vendor/
